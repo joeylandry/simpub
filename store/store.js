@@ -265,6 +265,7 @@ function renderCartPage() {
 function openCart() { location.href = "cart.html"; }
 function goToCart()   { location.href = "cart.html"; }
 function checkout()   { showToast("Proceeding to checkout..."); }
+function goMainToCart() { location.href = "store/cart.html"; }
 
 // --- EVENT DELEGATION FOR CLICKS ---
 document.addEventListener("click", e => {
@@ -386,7 +387,7 @@ window.addEventListener("DOMContentLoaded", () => {
         pop.classList.remove("hidden");
       }
       function scheduleHide() {
-        hideTimer = setTimeout(() => pop.classList.add("hidden"), 800);
+        hideTimer = setTimeout(() => pop.classList.add("hidden"), 500);
       }
       wrap.addEventListener("mouseenter", showPopup);
       pop.addEventListener("mouseenter", showPopup);
