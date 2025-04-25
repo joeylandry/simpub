@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Simerin</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="store/store.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-column left">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="gallery.html">Gallery</a></div>
+        </div>
+      
+        <div class="logo-center">
+          <a href="index.html">
+            <img src="logo.png" alt="Logo" class="logo" />
+          </a>
+        </div>
+        
+      
+        <div class="nav-column right">
+          <div><a href="store/index.html">Store</a></div>
+          <div><a href="contact.html">Contact</a></div>
+        </div>
+      </header>
+
+
+  <!-- Floating cart + preview -->
+  <div id="cart-icon" class="floating-cart" onclick="goToCart()">
+    🛒 <span id="cart-count">(0)</span>
+  </div>
+  <div id="cart-preview" class="cart-preview">
+    <div id="cart-preview-items" class="cart-preview-items"></div>
+    <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+  </div>
+      
+      
+    
+    <script src="script.js"></script>
+
+    <section class="content">
+        <h2>Get in Touch</h2>
+        <p>Email: contact@trippyart.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Trippy Clothing and Art. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
