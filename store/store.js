@@ -386,7 +386,7 @@ window.addEventListener("DOMContentLoaded", () => {
         pop.classList.remove("hidden");
       }
       function scheduleHide() {
-        hideTimer = setTimeout(() => pop.classList.add("hidden"), 500);
+        hideTimer = setTimeout(() => pop.classList.add("hidden"), 800);
       }
       wrap.addEventListener("mouseenter", showPopup);
       pop.addEventListener("mouseenter", showPopup);
