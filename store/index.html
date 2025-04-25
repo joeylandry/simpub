@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop | Simerin</title>
+  <!-- Main site CSS -->
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Store-only overrides -->
+  <link rel="stylesheet" href="store.css" />
+
+  <!-- Header animation, deferred -->
+  <script defer src="../script.js"></script>
+  <!-- Store logic must load after products data -->
+  <script defer src="products.js"></script>
+  <script defer src="store.js"></script>
+</head>
+<body>
+  <header>
+    <div class="nav-column left">
+      <div><a href="../index.html">Home</a></div>
+      <div><a href="../gallery.html">Gallery</a></div>
+    </div>
+    <div class="logo-center">
+      <a href="../index.html">
+        <img src="../logo.png" alt="Logo" class="logo" />
+      </a>
+    </div>
+    
+    <div class="nav-column right">
+      <div><a href="index.html">Store</a></div>
+      <div><a href="../contact.html">Contact</a></div>
+    </div>
+  </header>
+
+  <!-- Search bar in its own container -->
+<div id="search-container">
+  <input
+    type="search"
+    id="product-search"
+    placeholder="Search products…"
+    autocomplete="off"
+  />
+</div>
+
+  <!-- Floating cart + preview -->
+  <div id="cart-icon" class="floating-cart" onclick="goToCart()">
+    🛒 <span id="cart-count">(0)</span>
+  </div>
+  <div id="cart-preview" class="cart-preview">
+    <div id="cart-preview-items" class="cart-preview-items"></div>
+    <button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+  </div>
+
+  <section class="store-controls">
+    <!-- existing tag filters… -->
+    <button onclick="filterByTag('all')">All</button>
+    <button onclick="filterByTag('psychedelic')">Psychedelic</button>
+    <button onclick="filterByTag('shirt')">Shirts</button>
+  
+    <!-- new sort control -->
+    <label for="sort-by" class="sort-label">Sort By:</label>
+    <select id="sort-by" class="sort-select">
+      <option value="featured">Featured</option>
+      <option value="newest">Newest</option>
+      <option value="priceHighLow">Price: High – Low</option>
+      <option value="priceLowHigh">Price: Low – High</option>
+    </select>
+  </section>
+  
+  <section id="product-grid" class="product-grid"></section>
+  
+
+  
+
+  <section id="product-grid" class="product-grid"></section>
+
+  <footer>
+    <p>&copy; 2025 Trippy Clothing and Art. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
